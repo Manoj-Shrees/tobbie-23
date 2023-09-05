@@ -1,24 +1,26 @@
+# Tobbie-II
 
-> Open this page at [https://manoj-shrees.github.io/tobbie-23/](https://manoj-shrees.github.io/tobbie-23/)
+Extension for Tobbie-II
+The Tobbie-II robot is a STEAMP DIY kit for BBC micro:bit. The Tobbie-II extends the micro:bit's several GPIO ports for motor driver and IR sensors. The extension includes forward walking, backward walking, left turn and right turn, and reads the infrared sensing states on the left and right sides. In addition, it also provides functions such as shaking the head, shaking and dancing.
 
-## Use as Extension
+## Code Example
+```JavaScript
+basic.forever(function () {
+    TobbieII.forward()
+    if (TobbieII.RBlock(512)) {
+        TobbieII.stopWalk()
+    }
+})
+```
+## License
 
-This repository can be added as an **extension** in MakeCode.
+MIT
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/manoj-shrees/tobbie-23** and import
-
-## Edit this project
-
-To edit this repository in MakeCode.
-
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/manoj-shrees/tobbie-23** and click import
-
-#### Metadata (used for search, rendering)
+## Supported targets
 
 * for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+(The metadata above is needed for package search.)
+
+
+Product information-->https://science.prokits.com.tw/
+
